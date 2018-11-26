@@ -5,10 +5,10 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     if 'THIS_SERVICE' in os.environ:
-        return_string = "Hello World. This is service <b>{0}</b> built from branch <b>{1}</b>"\
+        return_string = "Hello Led Zeppelin. This is service <b>{0}</b> built from branch <b>{1}</b>"\
         .format(os.environ['THIS_SERVICE'], os.environ['BRANCH'])
     else:
-        return_string = "Hello World" 
+        return_string = "Hello Led Zeppelin" 
     return return_string 
 
 @app.route("/healthz")
