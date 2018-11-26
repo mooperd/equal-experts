@@ -4,7 +4,7 @@
 
 # Overview
 
-This demonstration is intended to show off the CI/CD possibilities of Kubernetes; specifically Review Apps. Review Apps are 'per branch' deployments which are then accessible via their own URL. 
+This demonstration is intended to show off the CI/CD possibilities of Kubernetes; specifically Review Apps. Review Apps are 'per branch' deployments which are then accessible via their own URL. They are useful as they allow a developer to show their work at any stage to anyone who might be interested. 
 
 As a CI/CD system I chose Codefresh. Mainly because its what I'm playing with at the moment but it does have some cool Kubernetes specific features such as Helm support and the ability to deploy templated YAML without any need for external tooling such as bash. 
 
@@ -20,7 +20,7 @@ The steps in the `codefresh.yaml` should be self explanatory. As a final step th
 
 # Review Apps
 
-Each Review App is deployed into its own namespace allowing easy cleanup with `kubectl delete namespace {{ namespace }}`. This cleanup process is not implemented in this demo but would be fairly trivial to achieve by various methods.
+Review Apps are created by the CI/CD when new branches are pushed to Github. Review Apps are deployed into their own namespaces which allows easy cleanup with `kubectl delete namespace {{ namespace }}`. This cleanup process is not implemented in this demo but would be fairly trivial to achieve by various methods.
 
 Two pull requests have already been created in homage to 1960's rock bands
 
@@ -28,7 +28,7 @@ Two pull requests have already been created in homage to 1960's rock bands
 
 [Led Zeppelin](https://github.com/mooperd/equal-experts/pull/4)
 
-The review apps can be inspected as described in the section above.
+The Review Apps for these PRs can be inspected as described in the section above.
 
 # Kubernetes
 
