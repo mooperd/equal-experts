@@ -38,6 +38,8 @@ The Review Apps for these PRs can be inspected as described in the section above
 
 Currently, this application is deployed to a Google Cloud GKE cluster. The standard NGINX ingress controller is being used. A wildcard DNS record for `otternetworks.info` is pointing to the ingress controller TCP loadbalancer meaning that no DNS changes are required for spinning up new Review Apps.
 
+Currently there is no provision for a production deploy but one could easily be added. My preferred method would be an simple extra step which is activated by a git tag.
+
 
 
 
