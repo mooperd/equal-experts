@@ -22,13 +22,17 @@ The steps in the `codefresh.yaml` should be self explanatory. As a final step th
 
 Review Apps are created by the CI/CD when new branches are pushed to Github. Review Apps are deployed into their own namespaces which allows easy cleanup with `kubectl delete namespace {{ namespace }}`. This cleanup process is not implemented in this demo but would be fairly trivial to achieve by various methods.
 
-Two pull requests have already been created in homage to 1960's rock bands
+Two pull requests have already been created in homage to 1960's rock bands:
 
 [Jethro Tull](https://github.com/mooperd/equal-experts/pull/3)
 
 [Led Zeppelin](https://github.com/mooperd/equal-experts/pull/4)
 
 The Review Apps for these PRs can be inspected as described in the section above.
+
+'Staging', or at least a deployment of the master branch can be found here:
+
+[http://master.equal-experts.otternetwork.info](http://master.equal-experts.otternetwork.info)
 
 # Kubernetes
 
