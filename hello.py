@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    if 'CF_REPO_NAME' in os.environ:
+    if 'THIS_SERVICE' in os.environ:
         return_string = "Hello World. This is service {0} built from branch {1}"\
-        .format(os.environ['CF_REPO_NAME'], os.environ['CF_BRANCH_TAG_NORMALIZED'])
+        .format(os.environ['THIS_SERVICE'], os.environ['BRANCH'])
     else:
         return_string = "Hello World" 
     return return_string 
