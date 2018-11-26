@@ -22,8 +22,17 @@ The steps in the `codefresh.yaml` should be self explanatory. As a final step th
 
 Each Review App is deployed into its own namespace allowing easy cleanup with `kubectl delete namespace {{ namespace }}`. This cleanup process is not implemented in this demo but would be fairly trivial to achieve by various methods.
 
+Two pull requests have already been created in homage to 1960's rock bands
+
+[Jethro Tull](pull/3)
+[Led Zeppelin](pull/4)
+
+The review apps can be inspected as described in the section above.
+
 # Kubernetes
 
 Currently, this application is deployed to a Google Cloud GKE cluster. The standard NGINX ingress controller is being used. A wildcard DNS record for `otternetworks.info` is pointing to the ingress controller TCP loadbalancer meaning that no DNS changes are required for spinning up new Review Apps.
+
+
 
 
