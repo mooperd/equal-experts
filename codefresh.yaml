@@ -35,6 +35,12 @@ steps:
       - GITHUB_STATE=success
       - GITHUB_DESCRIPTION=Creating Pull Request Environment
       - GITHUB_TARGET_URL=http://${{HOST}}
+    when:
+      condition:
+        any:
+          isPRopen: "'${{CF_PULL_REQUEST_ACTION}}' == 'opened'"
+          isPRsynchronized: "'${{CF_PULL_REQUEST_ACTION}}' == 'synchronize'"
+          isPRreopen: "'${{CF_PULL_REQUEST_ACTION}}' == 'reopened'"
 
   BuildingDockerImage:
     title: Building Docker Image
