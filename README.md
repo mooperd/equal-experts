@@ -2,3 +2,4 @@
 
 ## Equal Experts Homework
 
+This is some bad shit man
