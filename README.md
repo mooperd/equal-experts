@@ -24,8 +24,8 @@ Each Review App is deployed into its own namespace allowing easy cleanup with `k
 
 Two pull requests have already been created in homage to 1960's rock bands
 
-[Jethro Tull](pull/3)
-[Led Zeppelin](pull/4)
+[Jethro Tull](https://github.com/mooperd/equal-experts/pull/3)
+[Led Zeppelin](https://github.com/mooperd/equal-experts/pull/4)
 
 The review apps can be inspected as described in the section above.
 
